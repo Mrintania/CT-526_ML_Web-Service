@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">IRIS Prediction</h1>
+        <h1 class="mb-4" >IRIS Prediction</h1>
 
         {% if prediction %}
             <div class="alert alert-success" role="alert">
@@ -35,8 +35,11 @@
                 <input type="text" class="form-control" name="petal_width" id="petal_width" required step="any">
             </div>
             <button type="submit" class="btn btn-primary">Predict</button>
+            <a href="/show" class="btn btn-primary">Show History</a>
         </form>
     </div>
+    
+
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
