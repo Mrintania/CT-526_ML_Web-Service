@@ -1,11 +1,9 @@
-#Web service Machine Learning using scikit-learn and Flask | Model Iris | Database using PostgreSQL
-
 This repository is the code for the web service machine learning using scikit-learn and Flask. The model used is the Iris dataset. The database used is PostgreSQL.
 
 ## Installation
-1. Install the required libraries
+1. Install the required libraries in this project 
 ```bash
-pip install -r requirements.txt
+pip install flask scikit-learn psycopg2
 ```
 
 2. Install PostgreSQL
@@ -63,7 +61,20 @@ python app.py
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgements
-- [Building a Machine Learning Web API with Flask and scikit-learn](https://www.youtube.com/watch?v=UbCWoMf80PY)
-- [How to install PostgreSQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
+- [How to install PostgreSQL on Windows OS](https://www.postgresqltutorial.com/install-postgresql/)
+- [How to install PostgreSQL on Ubuntu OS](https://www.postgresql.org/download/linux/ubuntu/)
+- [How to create a database in PostgreSQL](https://www.postgresql.org/docs/9.0/sql-createdatabase.html)
+- [How to create a table in PostgreSQL](https://www.postgresql.org/docs/9.0/sql-createtable.html)
+
+
+## File Structure
+```
+├── app.py
+├── LICENSE.md
+├── README.md
+└── templates
+    └── index.html
+```
+
 
 
