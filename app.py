@@ -1,17 +1,10 @@
 from flask import Flask, render_template, request
 from iris_predict import predict_iris
-import psycopg2
 
 app = Flask(__name__)
 
-# Global database connection
-connection = psycopg2.connect(
-    dbname="postgres",
-    user="postgres",
-    password="password",
-    host="127.0.0.1",
-    port="5432"
-)
+#Get connnection from database.py
+from database import connection
 
 def get_data_from_postgresql():
     cursor = connection.cursor()
