@@ -14,3 +14,14 @@ Feature    4 ค่า ประกอบด้วย Sepal length, Sepal width,
 
 V.2
 จาก Assignment ที่แล้ว "Web or Web Service for IRIS ML using FLASK" ให้นักศึกษาต่อยอด โดยนำค่าที่ส่งให้และคืนค่าจาก ML เก็บลงฐานข้อมูล (อย่างง่าย โดยเขียนลงอย่างน้อย 1 Table) และโดยให้เพิ่ม ลิ้ง /All_result เพื่อดึงตารางด้งกล่าวมาดู ค่าที่ส่งให้ Classify และ ผลลัพธ์ที่ได้ โดยถ้าเป็น Web App ให้อยู่ในรูปตาราง แต่ถ้าเป็น Web Service ให้คืนค่ากลับมาเป็น JSON
+
+In postgreSQL use command below:
+CREATE TABLE iris_data (
+    id SERIAL PRIMARY KEY,
+    sepal_length FLOAT NOT NULL,
+    sepal_width FLOAT NOT NULL,
+    petal_length FLOAT NOT NULL,
+    petal_width FLOAT NOT NULL,
+    species VARCHAR(50) NOT NULL
+);
+
