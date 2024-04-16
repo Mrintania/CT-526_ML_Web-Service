@@ -41,8 +41,7 @@ def predict():
         cursor = connection.cursor()
 
         # Insert form data and predicted species into the database
-        cursor.execute("INSERT INTO iris_data (sepal_length, sepal_width, petal_length, petal_width, species) VALUES (%s, %s, %s, %s, %s)",
-                       (sepal_length, sepal_width, petal_length, petal_width, prediction))
+        cursor.execute("INSERT INTO iris_data (sepal_length, sepal_width, petal_length, petal_width, species) VALUES (%s, %s, %s, %s, %s)",(sepal_length, sepal_width, petal_length, petal_width, prediction))
         connection.commit()
         cursor.close()
 
