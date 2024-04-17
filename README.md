@@ -71,7 +71,7 @@ python app.py
 4. The predicted species will be shown
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgements
 - [How to install PostgreSQL on Windows OS](https://www.postgresqltutorial.com/install-postgresql/)
