@@ -44,12 +44,25 @@ CREATE TABLE iris_data (
 \q
 ```
 
-8. Run the application
+8. Create `database.py` in main folder for connect database
+```bash
+import psycopg2
+
+connection = psycopg2.connect(
+    dbname="", # Default postgres
+    user="", # Default postgres
+    password="", # Default blank
+    host="", # Default localhost
+    port="" # Default 5432
+)
+```
+
+9. Run the application
 ```bash
 python app.py
 ```
 
-9. Open your browser and go to `http://localhost:5000`
+10. Open your browser and go to `http://localhost:5000`
 
 ## Usage
 1. Open your browser and go to `http://localhost:5000`
@@ -69,12 +82,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## File Structure
 ```
-├── app.py
-├── LICENSE.md
-├── README.md
-└── templates
-    └── index.html
+
 ```
+
 
 
 

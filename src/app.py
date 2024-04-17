@@ -1,9 +1,14 @@
+import sys
 from flask import Flask, render_template, request
-from iris_predict import predict_iris
+
+# Import the predict_iris function from the iris_predict.py file in /Users/pornsupat/Documents/DPU/1.2/CT_526_Week07/
+sys.path.append('/Users/pornsupat/Documents/DPU/1.2/CT_526_Week07/')
+from model.iris_predict import predict_iris
 
 app = Flask(__name__)
 
 #Get connnection from database.py
+#For security reasons, it is not recommended to hardcode the database credentials in the code.
 from database import connection
 
 def get_data_from_postgresql():

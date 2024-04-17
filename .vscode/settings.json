@@ -12,5 +12,6 @@
         "code-runner-output": {
             "parser": "markdown"
         }
-    }
+    },
+    "python.analysis.autoImportCompletions": true
 }
